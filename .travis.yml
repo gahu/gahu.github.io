@@ -1,0 +1,12 @@
+language: node_js
+node_js: stable
+script:
+  - npm run build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github_token: $GIT_TOKEN
+  keep-history: true
+  local-dir: dist
+  on:
+    branch: master
