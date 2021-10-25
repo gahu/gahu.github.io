@@ -1,9 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 {% include head.html %}
+
 <body>
+
+  {% include navbar.html %}
+
   {{ content }}
-  {% include javascripts.html %}
-  {% include analytics.html %}
+
+  {% include footer.html %}
+
+  {% include scripts.html %}
+
+  {% include google-analytics.html %}
+
 </body>
+
 </html>
